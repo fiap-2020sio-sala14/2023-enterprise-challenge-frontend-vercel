@@ -39,7 +39,7 @@ const urls = {
 
 const tokens = {};
 for (const url in urls) {
-    get[url] = async () => {
+    tokens[url] = async () => {
         return await fetchData(urls[url]);
     };
 };
