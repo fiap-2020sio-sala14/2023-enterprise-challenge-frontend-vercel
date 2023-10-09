@@ -58,6 +58,7 @@ const Menu = ({ handleBlackSpot, setDirections }) => {
                 }
                 width={25}
                 height={25}
+                alt={""}
               />
               <span className=" text-xl font-semibold">
                 {session.user.name}
