@@ -44,4 +44,4 @@ for (const url in urls) {
     };
 };
 
-export default tokens;
+export { tokens };

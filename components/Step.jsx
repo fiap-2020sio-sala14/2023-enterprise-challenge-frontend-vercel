@@ -6,6 +6,7 @@ import {
   BsSignTurnSlightRightFill,
 } from "react-icons/bs";
 import { TbArrowRoundaboutLeft } from "react-icons/tb";
+import Image from "next/image";
 
 const Step = ({ step }) => {
   let Icon = null;
@@ -41,10 +42,10 @@ const Step = ({ step }) => {
     <div className="mb-6 flex flex-col items-start text-lightSlate hover:text-lightestSlate">
       <div className="flex items-start gap-4 mb-2">
         {step.maneuver.type === "depart" && (
-          <img src="/src.png" className="w-6 mt-2" alt="" />
+          <Image src={"/src.png"} className={"w-6 mt-2"} alt={""} />
         )}
         {step.maneuver.type === "arrive" && (
-          <img src="/dest.png" className="w-6" alt="" />
+          <Image src={"/dest.png"} className={"w-6"} alt={""} />
         )}
         {(Icon !== null && step.maneuver.type !== 'arrive') && <Icon size={25} />}
         <span className=" text-base font-semibold cursor-pointer">
