@@ -4,7 +4,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { compare, hashSync } from "bcryptjs";
 import User from "../../../modals/User";
 import connectMongo from "../../../libs/conn";
-import { tokens } from "../../../libs/tokens";
+import tokens from "../../../libs/tokens";
 
 export const authOptions = {
   secret: tokens.ITINERA_NEXTAUTH_SECRET,

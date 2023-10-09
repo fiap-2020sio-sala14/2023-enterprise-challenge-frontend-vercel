@@ -9,7 +9,7 @@ import RouteData from "./RouteData";
 import { toast } from "react-hot-toast";
 import { BiRefresh } from "react-icons/bi";
 import useLoadingModal from "../hooks/useLoadingModal";
-import { tokens } from "../libs/tokens";
+import tokens from "../libs/tokens";
 
 const token = tokens.MAPBOX_PUBLIC_API_TOKEN;
 

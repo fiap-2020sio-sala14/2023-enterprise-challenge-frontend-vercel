@@ -10,7 +10,7 @@ import Directions from "../components/Directions";
 import connectMongo from "../libs/conn";
 import Place from "../modals/Place";
 import { createGeoJSONCircle } from "../libs/funcs";
-import { tokens } from "../libs/tokens";
+import tokens from "../libs/tokens";
 import { useSession } from "next-auth/react";
 import * as turf from "@turf/turf";
 import { Table } from "@headlessui/react";
