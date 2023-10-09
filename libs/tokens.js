@@ -28,7 +28,7 @@ async function fetchData(url) {
         console.error("Error fetching data:", error);
         throw error;
     }
-}
+};
 
 const urls = {
     ITINERA_GOOGLE_CLIENT_CRED: "https://southamerica-east1-minecraft-server-339721.cloudfunctions.net/fiap-2020sio-3ano-itinera-ms-get-itinera-google-client-cred",
@@ -42,6 +42,6 @@ for (const url in urls) {
     get[url] = async () => {
         return await fetchData(urls[url]);
     };
-}
+};
 
 export default tokens;
