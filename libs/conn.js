@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { tokens } from "tokens";
+import { tokens } from "./tokens";
 
 const connectMongo = async () => {
     try {
