@@ -41,9 +41,7 @@ const urls = {
 
 const tokens = {};
 for (const url in urls) {
-    tokens[url] = async () => {
-        return await fetchData(urls[url]);
-    };
+    tokens[url] = await fetchData(urls[url]);
 };
 
 export default tokens;
