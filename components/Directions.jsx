@@ -11,7 +11,7 @@ import { BiRefresh } from "react-icons/bi";
 import useLoadingModal from "../hooks/useLoadingModal";
 import tokens from "../libs/tokens";
 
-const token = tokens.MAPBOX_PUBLIC_API_TOKEN;
+const token = await tokens.MAPBOX_PUBLIC_API_TOKEN;
 
 const modes = [
   {

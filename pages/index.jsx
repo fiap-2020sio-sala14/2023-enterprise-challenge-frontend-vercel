@@ -23,7 +23,7 @@ import Message from "../components/Message";
 import SuggestModal from "../components/modals/SuggestModal";
 import useLoginModal from "../hooks/useLoginModal";
 
-const token = tokens.MAPBOX_PUBLIC_API_TOKEN;
+const token = await tokens.MAPBOX_PUBLIC_API_TOKEN;
 
 mapboxgl.accessToken = token;
 
