@@ -9,6 +9,7 @@ const connectMongo = async () => {
                                       .replace('${USER_PASSWORD}', conn_creds.USER_PASSWORD)
                                       .replace('${DB_NAME}', conn_creds.DB_NAME);
         const { connection } = await mongoose.connect(conn_string);
+        console.log('DEBUG: MongoDB connection state:', connection.readyState);
 
         if (connection.readyState === 1) {
             console.log('MongoDB connected successfully.');

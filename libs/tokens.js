@@ -1,15 +1,17 @@
 async function fetchData(url) {
     try {
+        console.log("DEBUG: Fetching data from:", url)
         const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
+        console.log("DEBUG: Data fetched successfully from:", url)
 
-        const contentType = response.headers.get("Content-Type");
         let data;
 
         /*
+        const contentType = response.headers.get("Content-Type");
         if (contentType && contentType.includes("application/json")) {
             data = await response.json(); // Parse JSON data
         } else {
