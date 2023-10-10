@@ -3,6 +3,8 @@ import tokens from './tokens';
 
 const connectMongo = async () => {
     try {
+        // Log tokens full
+        console.log('DEBUG: tokens:', tokens);
         const conn_creds = tokens.ITINERA_MONGODB_PUBLIC_CONN;
         const conn_string = conn_creds.STRING
                                       .replace('${USER_ID}', conn_creds.USER_ID)
