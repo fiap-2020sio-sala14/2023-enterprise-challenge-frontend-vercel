@@ -7,7 +7,7 @@ import connectMongo from "../../../libs/conn";
 import tokens from "../../../libs/tokens";
 
 export const authOptions = {
-  secret: tokens.ITINERA_NEXTAUTH_SECRET,
+  secret: await tokens.ITINERA_NEXTAUTH_SECRET,
   session: {
     strategy: "jwt",
   },
@@ -43,8 +43,8 @@ export const authOptions = {
   },
   providers: [
     GoogleProvider({
-      clientId: tokens.ITINERA_GOOGLE_CLIENT_CRED["ID"],
-      clientSecret: tokens.ITINERA_GOOGLE_CLIENT_CRED["SECRET"],
+      clientId: await tokens.ITINERA_GOOGLE_CLIENT_CRED["ID"],
+      clientSecret: await tokens.ITINERA_GOOGLE_CLIENT_CRED["SECRET"],
     }),
     CredentialsProvider({
       name: "Credentials",
